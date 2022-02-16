@@ -1,0 +1,27 @@
+<h1>WebStorm test</h1>
+<h3>localUsers$</h3>
+<table border="1">
+  <tr *ngFor="let u of localUsers$ | async">
+    <td>{{u.id}}</td>
+    <td>{{u.name}}</td>
+  </tr>
+</table>
+
+<h3>httpUsers$</h3>
+<table border="1">
+  <tr *ngFor="let u of httpUsers$ | async">
+    <td>{{u.id}}</td>
+    <td>{{u.name}}</td>
+  </tr>
+</table>
+
+<h3>ngrxDataUsers$</h3>
+<table border="1">
+  <tr *ngFor="let u2 of (ngrxDataUsers$ | async)">
+    <td>{{u2.id}}</td>
+    <td>{{u2.name}}</td>
+    <td>{{u2.email}}</td>
+    <td>{{u2.counter}}</td>
+  </tr>
+</table>
+
